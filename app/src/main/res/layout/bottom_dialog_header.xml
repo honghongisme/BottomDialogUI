@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大美时代"
+        android:id="@+id/comic_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comic_description"
+        app:layout_constraintTop_toBottomOf="@id/comic_title"
+        android:text="一本描述美术学院生活的职业文
+每个听见美术学院的人，都会会心一笑，露出那种你懂的表情。
+没错，美术学院确实有画那啥的课程，可不是每个专业都会画。
+好比万长生，他考的是国画系……
+可他也没想到……"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comic_cur_chapter"
+        app:layout_constraintTop_toBottomOf="@id/comic_description"
+        android:text="第2话/更新至第8话"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="作品详情"
+        android:id="@+id/comic_detail_btn"
+        app:layout_constraintTop_toBottomOf="@id/comic_description"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
